@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UbahActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Order"
+                android:textSize="40dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohon mengisi data dengan benar"
+                android:textSize="18dp"
+                android:letterSpacing="0.03"
+                android:textColor="#FBC02D"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:layout_width="match_parent"
+                    android:padding="7dp"
+                    android:background="@drawable/bginp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et_alamat"
+                    android:layout_width="match_parent"
+                    android:padding="7dp"
+                    android:background="@drawable/bginp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori Sepeda Motor"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_kategori"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_matic"
+                        android:gravity="center"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Matic" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Sport"
+                        android:gravity="center"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sport" />
+
+                    <RadioButton
+                        android:id="@+id/rb_touring"
+                        android:gravity="center"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Touring" />
+
+                    <RadioButton
+                        android:id="@+id/rb_trail"
+                        android:gravity="center"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Trail" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Merk Sepeda Motor"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bginp"
+                    android:id="@+id/sp_merk"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et_deskripsi"
+                    android:layout_width="match_parent"
+                    android:padding="7dp"
+                    android:background="@drawable/bginp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et_harga"
+                    android:layout_width="match_parent"
+                    android:padding="7dp"
+                    android:background="@drawable/bginp"
+                    android:inputType="number"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnubah"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:text="Update"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
